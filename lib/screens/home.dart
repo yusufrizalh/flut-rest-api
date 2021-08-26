@@ -85,10 +85,19 @@ class _HomeState extends State<Home> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
-          onPressed: () {
-            // diarahkan ke form create data student
-          }),
+        child: Icon(Icons.add),
+        onPressed: () {
+          // diarahkan ke form create data student
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) {
+                return Create();
+              },
+            ),
+          );
+        },
+      ),
     );
   }
 }

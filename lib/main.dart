@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => Home(),
         '/details': (context) => Details(),
-        // '/create': (context) => Create(),
-        // '/edit': (context) => Edit(),
+        '/create': (context) => Create(),
+        '/edit': (context) => Edit(),
       },
     );
   }
